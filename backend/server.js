@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require( 'express' );
 const mongoose = require( 'mongoose' );
 const dotenv = require( 'dotenv' ).config();
@@ -18,8 +19,14 @@ app.use( passport.initialize() );
 // ROUTES
 const UserRoutes = require( './Routes/User' );
 const DashboardRoutes = require( "./Routes/Dashboard" );
+
+app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.use( '/user', UserRoutes );
 app.use( '/dashboard', DashboardRoutes );
+
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
+});
 
 // CONNECT TO THE MONGODB
 mongoose
@@ -32,8 +39,8 @@ mongoose
   })
   .catch((err) => {
     console.log(err);
-  } ); 
-  
+  } );
+
 //LISTEN TO THE SERVER
 app.listen( `${process.env.SERVER_PORT}`, () => {
     console.log(`Server Started on Port ${process.env.SERVER_PORT}`);
