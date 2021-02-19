@@ -24,10 +24,6 @@ app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.use( '/user', UserRoutes );
 app.use( '/dashboard', DashboardRoutes );
 
-app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
-});
-
 // CONNECT TO THE MONGODB
 mongoose
   .connect(
@@ -42,7 +38,9 @@ mongoose
   } );
 
 //LISTEN TO THE SERVER
-app.listen( `${process.env.SERVER_PORT}`, () => {
-    console.log(`Server Started on Port ${process.env.SERVER_PORT}`);
-})
 
+const port = process.env.PORT || process.env.SERVER_PORT;
+
+app.listen(port, () => {
+    console.log(`Server Started on Port ${port}`);
+})
