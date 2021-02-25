@@ -103,6 +103,7 @@ h3 {
 	height: 35%;
 	width: 25%;
 	min-width: 250px;
+	min-height: 250px;
 	margin: 0 0 5% 0;
 	padding: 30px;
 	background: rgba(245, 245, 245, 0.9);
@@ -133,7 +134,7 @@ h3 {
 .registerText {
 	height: 60%;
 	width: 100%;
-	font-size: max(14px, 1.91vh);
+	font-size: max(14px, 1.88vh);
 }
 
 .registerButtonWrapper {
