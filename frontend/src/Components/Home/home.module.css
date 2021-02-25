@@ -95,6 +95,8 @@ h3 {
 }
 
 .registerTile {
+	display: flex;
+	flex-direction: column;
 	position: absolute;
 	left: -500px;
 	bottom: 12%;
@@ -131,7 +133,7 @@ h3 {
 .registerText {
 	height: 60%;
 	width: 100%;
-	font-size: max(14px, 1.25vw);
+	font-size: max(14px, 1.9vh);
 }
 
 .registerButtonWrapper {
@@ -147,6 +149,7 @@ h3 {
 	height: max(50px, 4vh);
 	width: 30%;
 	min-width: 80px;
+	margin-top: 15px;
 	background: black;
 	color: whitesmoke;
 	font-size: max(12px, 1.1vw);
