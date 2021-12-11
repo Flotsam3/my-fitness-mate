@@ -16,7 +16,7 @@ https://my-fitness-mate.herokuapp.com
 
 # Usage
 
-Klick on the sign-up button to create an account. 
+Klick on the **sign-up button** to create an account. 
 During the register process you will be asked a bunch of personal questions about your physique, your activity and your workout goals. This information is used to generate a basic nutrition plan with recommended values for your macronutrients. Additionally you are provided with a default workout plan, which you can modify according to your personal needs. 
 Once finished the registration you find yourself on the dashbord. There you see an overview of the number of exercises set for each body part, your nutrition and your weight. 
 Other pages to explore are the edit workout page, where you can configure your weekly workout plan, the daily overview page, where you can see what kind of workout you have to do for today and finally the calendar page with a brief overview of all accomplished and missed workouts.
@@ -27,4 +27,4 @@ Physical activity is crucial for mental and overall health. When this applicatio
 
 # Technology used
 
-Main technologies used: HTML, CSS, React, Node.js, Express, MongoDB, chart.js, day.js, jsonwebtoken. Furthermore Figma and Trello for the design and project management.
+Main technologies used: *HTML, CSS, React, Node.js, Express, MongoDB, chart.js, day.js, jsonwebtoken*. Furthermore *Figma* and *Trello* for the design and project management.
