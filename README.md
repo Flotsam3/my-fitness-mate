@@ -28,6 +28,6 @@ Other pages to explore are the edit **workout page**, where you can configure yo
 
 Physical activity is crucial for mental and overall health. When this application was conceived, we were in the middle of the corona crisis with its ramifications and restrictions for everybody’s life. The intention was to build an app that allows you to pursue a healthy lifestyle and physical activity even without having access to a gym.
 
-## Technology used
+## Technology
 
 Main technologies used: *HTML, CSS, React, Node.js, Express, MongoDB, chart.js, day.js, jsonwebtoken*. Furthermore *Figma* and *Trello* for the design and project management.
