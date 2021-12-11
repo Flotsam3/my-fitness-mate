@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/58853799/145687533-257ccd27-c663-401b-8e82-69eaa4fe3f64.png)
 
-# My Fitness Mate – What is it?
+## My Fitness Mate – What is it?
 
 `My Fitness Mate` was created as a group project with the objective of allowing the user to create their own workouts as well as keeping track of the progress.
 
