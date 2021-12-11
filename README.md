@@ -11,6 +11,9 @@ For even more convenience you can rely on the default workout plan, instantly cr
 
 https://my-fitness-mate.herokuapp.com
 
+# Installation
+npm start
+
 # Usage
 
 Klick on the sign-up button to create an account. 
