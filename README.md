@@ -12,7 +12,7 @@ For even more convenience you can rely on the default workout plan, instantly cr
 https://my-fitness-mate.herokuapp.com
 
 # Installation
-npm start
+`npm start`
 
 # Usage
 
