@@ -4,7 +4,7 @@
 
 # My Fitness Mate – What is it?
 
-`My Fitness Mate` was created as a group project with the objective of allowing the user to create their own workouts as well as keeping track of the progress. 
+`My Fitness Mate` was created as a group project with the objective of allowing the user to create their own workouts as well as keeping track of the progress.  
 For even more convenience you can rely on the default workout plan, instantly created after you sign up and according to your constitution, goals and life habits.
 
 # Demo
