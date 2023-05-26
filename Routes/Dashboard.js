@@ -226,6 +226,7 @@ router.get("/defaultWorkoutTwo", async (request, response) => {
   try {
     const defaultData = await WorkoutInfo.findOne({ user: request.user });
     response.status(200).json(defaultData);
+    console.log("data", request.user);
   } catch (error) {
     response.status(401).json({ msg: error.message });
   }

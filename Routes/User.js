@@ -77,7 +77,7 @@ router.post("/login", async (request, response) => {
     const isMatch = await bcrypt.compare(password, user.password)
     if (!isMatch) return response.status(400).json({ msg: "Invalid Password" })
 
-    //creating jsonwebtoken (jwt)
+    // creating jsonwebtoken (jwt)
     const token = jwtIssuer(user)
     response
       .cookie("jwt", token, {

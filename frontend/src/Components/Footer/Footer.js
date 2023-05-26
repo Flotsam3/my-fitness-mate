@@ -17,7 +17,7 @@ export default function Footer() {
               <a href="https://contact.com">Contact</a>
             </li>
             <li>
-              <a href="https://impressum.com">Impressum</a>
+              <a href="https://imprint.com">Imprint</a>
             </li>
             <li>
               <a href="https://privacy.com">Privacy Policy</a>

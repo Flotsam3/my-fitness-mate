@@ -245,7 +245,7 @@ export default function Dashboard(props) {
             }
             if (index > weightData.length - 1) {
               // Fill empty values with null and subsequent week numbers
-              weightSelection.push([null, weightData[0][1] + index]);
+              weightSelection.push([null, weightData[weightData.length-1][1] + index - (weightData.length - 1)]);
             } else {
               // Fill with the values from the database
               weightSelection.push(weightData[index]);
@@ -259,7 +259,6 @@ export default function Dashboard(props) {
         }
         setWeightChartData(weightSelection);
       } else {
-        console.log("level8");
         // The weight has never been updated (only initial weight)
         const chartDataBuffer = [...weightChartData];
         const startWeek = dayjs(userData.timestamps.createdAt).week();
@@ -459,7 +458,7 @@ export default function Dashboard(props) {
 
   const [printMessage, setPrintMessage] = useState("Difference");
 
-  //HANDLE WEIGHT DIFFERENT ------------------------------
+  //HANDLE WEIGHT DIFFERENCE ------------------------------
   const handleWeightDifferent = () => {
     console.log(weightDifference);
     if (weightDifference && weightDifference.updatedWeight.length !== 0) {
@@ -581,7 +580,7 @@ export default function Dashboard(props) {
           ];
 
         const today = new Date();
-        const diff = today.getTime() - lastMissedDay.getTime();
+        const diff = dayjs(today).diff(dayjs(lastMissedDay), "day");
         const dayDiff = Math.ceil(diff / (1000 * 3600 * 24));
         setStreak(dayDiff);
       } else {

@@ -20,7 +20,7 @@ app.use( passport.initialize() );
 const UserRoutes = require( './Routes/User' );
 const DashboardRoutes = require( "./Routes/Dashboard" );
 
-app.use(express.static(path.join(__dirname, '/frontend/build')));
+// app.use(express.static(path.join(__dirname, '/frontend/build')));
 app.use( '/user', UserRoutes );
 app.use( '/dashboard', DashboardRoutes );
 

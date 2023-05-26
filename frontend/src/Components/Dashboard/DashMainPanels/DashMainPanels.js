@@ -10,12 +10,7 @@ import { Bar } from "react-chartjs-2";
 import { Line } from "react-chartjs-2";
 
 export default function DashMainPanels(props) {
-  useEffect(() => {
-    console.log("chart re-rendered", props.weightChartData);
-  }, [props.weightChartData]);
-
   const weight = props.weightChartData;
-  // console.log(weight);
   const data = {
     labels: ["Abs", "Arms", "Back", "Chest", "Legs", "Shoulders"],
     datasets: [
