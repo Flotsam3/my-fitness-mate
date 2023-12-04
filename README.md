@@ -5,6 +5,7 @@
 ## Demo
 
 [my-fitness-mate.herokuapp.com](https://my-fitness-mate.herokuapp.com)
+update: since heroku decided to change their pricing model, the app is no longer available under this link :(
 
 ## What is it?
 
